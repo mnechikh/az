@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Appointments COVID-19 Testing {% endblock %}
+{% block meta %} At Home Covid-19 Testing{% endblock %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<center>
+<html>
+<head>
+	<title>Appointments</title>
+	<link rel="stylesheet" href="{% static 'website/css/style.css' %}" crossorigin="anonymous">
+	<style type="text/css">
+		h1 {padding-left: 100px;
+			padding-top: 50px;
+			}
+		.container{ padding-top: 40px; }
+	</style>
+</head>
+<body>
+
+  <h3 class="display-6"><center>Covid-19 At Home Testing App<center></h3>
+  <p class="lead">Schedule Your Appointment </p>
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn btn-primary btn-md" href="{% url 'post_new' %}" role="button">Create an Appointment</a>
+    <a class="btn btn-primary btn-md" href="view" role="button">View Other Appointments</a>
+  </p>
+</div>
+</div>
+</body>
+</html>
+<center>
+{% endblock %}
